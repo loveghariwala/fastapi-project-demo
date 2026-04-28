@@ -1,55 +1,110 @@
-# --- Operating System Files ---
-# macOS
+# =========================
+
+# OS FILES
+
+# =========================
+
 .DS_Store
 .AppleDouble
 .LSOverride
-# Windows
 Thumbs.db
-Thumbs.db:extract_data
 ehthumbs.db
 Desktop.ini
 
-# --- Build and Distribution ---
-/node_modules/
-/vendor/
-/build/
-/dist/
-/out/
-/bin/
-/obj/
-*.exe
-*.dll
-*.so
-*.o
+# =========================
 
-# --- Environment and Secrets ---
+# NODE / FRONTEND
+
+# =========================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+
+dist/
+build/
+.next/
+out/
+coverage/
+
+# =========================
+
+# PYTHON / FASTAPI
+
+# =========================
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+
+# =========================
+
+# ENV / SECRETS
+
+# =========================
+
 .env
-.env.local
-.env.*.local
+.env.*
 *.key
 *.pem
 secrets.json
 
-# --- IDE and Text Editors ---
-# VS Code
+# =========================
+
+# IDE / EDITOR
+
+# =========================
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-# IntelliJ / WebStorm / PyCharm
+
 .idea/
 *.iml
-# Other Editors
-*.swp
-*.swo
-*~
 
-# --- Logs and Temporary Files ---
+# =========================
+
+# LOGS / TEMP FILES
+
+# =========================
+
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*.tmp
+*.temp
 .cache/
 tmp/
 temp/
+
+# =========================
+
+# DATABASE / MIGRATIONS (optional)
+
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+
+# MISC
+
+# =========================
+
+*.swp
+*.swo
+*~
